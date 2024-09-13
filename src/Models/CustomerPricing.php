@@ -3,7 +3,7 @@
 namespace Rapidez\CustomerPricing\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Rapidez\Code\Models\Model;
+use Rapidez\Core\Models\Model;
 use Rapidez\Core\Models\Product;
 
 class CustomerPricing extends Model

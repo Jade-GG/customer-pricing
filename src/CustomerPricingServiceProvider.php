@@ -4,6 +4,7 @@ namespace Rapidez\CustomerPricing;
 
 use Illuminate\Support\ServiceProvider;
 use Rapidez\Core\Models\Product;
+use Rapidez\CustomerPricing\Models\CustomerPricing;
 
 class CustomerPricingServiceProvider extends ServiceProvider
 {
