@@ -21,7 +21,7 @@ class CustomerPricingServiceProvider extends ServiceProvider
                 ->orderBy('quantity', 'desc')
                 ->first();
 
-            return $customerPrice->price ?? $this->price;
+            return $customerPrice->price ?? null;
         });
     }
 }
