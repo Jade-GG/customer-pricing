@@ -23,5 +23,12 @@ class CustomerPricingServiceProvider extends ServiceProvider
 
             return $customerPrice->price ?? null;
         });
+
+        Product::macro('customerTierPrices', function (int $customerId) {
+            return $this->customerPricing()
+                ->where('customer_id', $customerId)
+                ->orderBy('quantity')
+                ->get();
+        });
     }
 }
